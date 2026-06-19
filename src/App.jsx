@@ -164,7 +164,7 @@ function Result({ r, unitLabel, extras }) {
         <div className="text-center">
           <div className="text-2xl font-bold text-stone-700">เท่ากันพอดี</div>
           <p className="mt-1 text-sm text-stone-500">
-            ราคาต่อ 1 {unitLabel} เท่ากันที่ {baht(r.lo)} — เลือกตัวไหนก็คุ้มเท่ากัน
+            ราคาต่อ 1 {unitLabel} เท่ากันที่ {baht(r.lo)} — เลือกอันไหนก็คุ้มเท่ากัน
           </p>
         </div>
         <div className="mt-4"><PerUnitBars r={r} unitLabel={unitLabel} /></div>
@@ -253,8 +253,8 @@ function Calc1() {
   return (
     <div className="space-y-5">
       <p className="text-sm leading-relaxed text-stone-500">
-        ใส่<b className="text-stone-600">ราคา</b>กับ<b className="text-stone-600">ปริมาณ</b>ของสินค้าสองตัวที่ขนาดอาจไม่เท่ากัน
-        แล้วระบบจะเทียบให้ว่าตัวไหนถูกกว่าเมื่อคิดที่ปริมาณเท่ากัน
+        ใส่<b className="text-stone-600">ราคา</b>กับ<b className="text-stone-600">ปริมาณ</b>ของสินค้าสองอันที่ขนาดอาจไม่เท่ากัน
+        แล้วระบบจะเทียบให้ว่าอันไหนถูกกว่าเมื่อคิดที่ปริมาณเท่ากัน
       </p>
 
       <div className="flex items-center gap-2 text-sm">
@@ -417,9 +417,9 @@ export default function App() {
       <div className="mx-auto w-full max-w-xl">
         <header className="mb-6 text-center">
           <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-teal-600/10 px-3 py-1 text-[13px] font-medium text-teal-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-teal-500" /> เทียบราคาให้รู้ว่าตัวไหนคุ้ม
+            <span className="h-1.5 w-1.5 rounded-full bg-teal-500" /> เทียบราคาให้รู้ว่าอันไหนคุ้ม
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-stone-800 sm:text-3xl">ตัวไหนคุ้มกว่า?</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-stone-800 sm:text-3xl">อันไหนคุ้มกว่า?</h1>
           <p className="mt-1.5 text-sm text-stone-500">
             เทียบราคาต่อหน่วยของสินค้า 2 ตัว · ดูว่าถูกกว่ากี่เปอร์เซ็นต์
           </p>
